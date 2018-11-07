@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace multiplication
 {
-    class Multipliction
+    class Multiplication
     {
         static void Main(string[] args)
         {
-            //this program give you the multipliction table of any number
+            // This program will give you the multiplication table of any number you enter
 
-            Console.WriteLine("Please enter number");
+            Console.WriteLine("Please enter a number");
             int x = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i <= 10 ; i++)
+            for (int i = 1; i <= 10; i++)
             {
                 int result = x * i;
-                Console.WriteLine(i+ "*" +x+ "=" + result);
+                Console.WriteLine(i + " * " + x + " = " + result);
             }
         }
     }
