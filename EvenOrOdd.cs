@@ -1,4 +1,7 @@
-﻿using System;
+﻿
+// ‏Find out if the entered number is odd or even by using -2‏
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,15 +13,21 @@ namespace EvenOrOdd
     {
         static void Main(string[] args)
         {
-            int x = Convert.ToInt32(Console.ReadLine());
-            while (x > 1)
+            Console.WriteLine("Please enter a number");
+            int number = Convert.ToInt32(Console.ReadLine());
+            while (number > 1)
             {
-                x = x - 2;
+                number -= 2;
             }
-            if (x == 0)
-                Console.WriteLine("even");
+
+            if (number == 0)
+            {
+                Console.WriteLine("Even");
+            }
             else
-                Console.WriteLine("odd");
+            {
+                Console.WriteLine("Odd");
+            }
         }
     }
 }
