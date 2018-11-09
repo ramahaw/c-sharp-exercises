@@ -1,4 +1,7 @@
-﻿using System;
+﻿
+//find out if the entered number is primary or not primary. 
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,25 +9,32 @@ using System.Threading.Tasks;
 
 namespace prime
 {
-    class prime
+    class Prime
     {
         static void Main(string[] args)
         {
-            int x = Convert.ToInt32(Console.ReadLine());
+            int number = Convert.ToInt32(Console.ReadLine());
             int i = 2;
-            while (i < x)
+            if (number == 1 || number == 0)
             {
-                if (x % i == 0)
+                Console.WriteLine("Primary");
+            }
+            else
+            {
+                while (i < number)
                 {
-                    Console.WriteLine("not prime");
-                    break;
-                }
-                else
-                {
-                    i++;
-                    if (x-i==1)
+                    if (number % i == 0)
                     {
-                        Console.WriteLine("prime");
+                        Console.WriteLine("Not Primary");
+                        break;
+                    }
+                    else
+                    {
+                        i++;
+                        if (number - i == 1)
+                        {
+                            Console.WriteLine("Primary");
+                        }
                     }
                 }
 
