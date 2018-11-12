@@ -10,15 +10,17 @@ namespace FactorialNumber
     {
         static void Main(string[] args)
         {
-            int y = 1;
-            Console.Write("x=  ");
-            int x = Convert.ToInt32(Console.ReadLine());
-            for (int i = 1; i <= x; i++)
+            Console.WriteLine("Please enter a positve number to get its factorial");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            int result = 1;
+            for (int i = number; i > 0; i--)
             {
-                Console.WriteLine(i);
-                y = i * y;
+                result *= i;
             }
-            Console.WriteLine("x! =" + y);
+
+            Console.WriteLine(number + "!= " + result);
+            Console.ReadKey();
         }
     }
 }
