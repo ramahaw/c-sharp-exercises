@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace multiplication
 {
     class Multiplication
     {
         static void Main(string[] args)
         {
-            // This program will give you the multiplication table of any number you enter
-
-            Console.WriteLine("Please enter a number");
+            Console.WriteLine("Please enter the number you want to know the multiplication table for him");
             int x = Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i <= 10; i++)
             {
