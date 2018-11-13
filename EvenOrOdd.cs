@@ -13,7 +13,7 @@ namespace EvenOrOdd
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a number");
+            Console.WriteLine("Please enter a number to know if it's even or odd:");
             int number = Convert.ToInt32(Console.ReadLine());
             while (number > 1)
             {
