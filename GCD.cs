@@ -25,7 +25,7 @@ namespace GCD
                     number2 = number2 - number1;
                 }
             }
-            Console.WriteLine("The GCD is :" + number1);
+            Console.WriteLine("The GCD is: " + number1);
             Console.ReadKey();
         }
     }
